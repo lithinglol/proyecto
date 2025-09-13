@@ -1,1 +1,13 @@
-Un bot de discord de proyecto final, WIP
+Un bot de discord con funciones de tts y reproduccion de audios de youtube
+
+Comandos disponibles:
+    !start - Inicia el bot
+    !unir - El bot se une a tu canal de voz
+    !salir - El bot sale del canal de voz
+    !hablar <frase> - El bot dice la frase en el canal de voz
+    !youtube <url> - El bot reproduce el audio de un video de YouTube en el canal de voz
+    !parar - Detiene la reproducción actual
+    !pausar - Pausa la reproducción actual
+    !resumir - Reanuda la reproducción pausada
+    !ayuda - Muestra este mensaje de ayuda
+    """
