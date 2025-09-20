@@ -19,11 +19,13 @@ def download_audio(url, output_name='audio'):
     opts = ytdl_opts.copy()
     if output_name:
         safe_name = sanitize_filename(output_name)
-        # usamos un placeholder de extensión para que el postprocessor genere .mp3
+        # usamos un placeholder de extensión
+        # para que el postprocessor genere .mp3
         opts['outtmpl'] = safe_name + '.%(ext)s'
 
     with yt_dlp.YoutubeDL(opts) as ydl:
-        # usamos extract_info para forzar descarga y obtener metadata si la necesitamos
+        # usamos extract_info para forzar descarga y
+        # obtener metadata si la necesitamos
         ydl.extract_info(url, download=True)
 
     if output_name:
